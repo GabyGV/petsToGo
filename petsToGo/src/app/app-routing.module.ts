@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdoptarComponent } from './components/adoptar/adoptar.component';
 import { FirstComponent } from './components/first/first.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -8,7 +9,8 @@ import { RegisterComponent } from './components/register/register.component';
 const routes: Routes = [{path: "first", component: FirstComponent},
                         {path: "register", component: RegisterComponent},
                         {path: "login", component: LoginComponent},
-                        {path: "home", component: HomeComponent}
+                        {path: "home", component: HomeComponent},
+                        {path: "adoptar", component: AdoptarComponent}
                        ];
 
 @NgModule({

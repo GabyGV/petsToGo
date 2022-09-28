@@ -1,10 +1,12 @@
 <c-header class="header_color">
     <c-container fluid>
-        <c-header-brand [routerLink]>
+        <a cNavLink routerLink="/first">
+          <c-header-brand [routerLink]>
             <img src="assets/images/logo/PetsToGoOscuro.png" width="80px" height="80px">
         </c-header-brand>
-      <c-header-brand class="tittle_white">PetsToGo</c-header-brand>
-      <c-header-nav class="ms-auto">
+          <c-header-brand class="tittle_white">PetsToGo</c-header-brand>
+        </a>
+        <c-header-nav class="ms-auto">
         <c-nav-item class="button_attributs">
             <a class="tittle_white" cNavLink routerLink="/register">Registrarse</a>
         </c-nav-item>
@@ -25,7 +27,9 @@
             <h2>¿Ya tienes una cuenta?</h2>
         </div>
         <div class = "center_button">
+          <a cNavLink routerLink="/login">
             <button cButton color="primary" variant="outline">Iniciar sesión</button>
+          </a>
           </div>
     </c-col>
     <c-col [sm]="6">
@@ -75,7 +79,9 @@
               <label cFormCheckLabel for="checkOne" class="text_white">He leído y acepto los términos y condiciones.</label>
             </c-form-check>
             <div class = "center_button">
-              <button cButton color="light" variant="outline">Crear cuenta</button>
+              <a cNavLink routerLink="/home">
+                <button cButton color="light" variant="outline">Crear cuenta</button>
+              </a>
             </div>
             </div>
     </c-col>
