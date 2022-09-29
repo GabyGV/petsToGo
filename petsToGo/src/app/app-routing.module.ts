@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdoptarComponent } from './components/adoptar/adoptar.component';
 import { AgregarMascotaComponent } from './components/agregar-mascota/agregar-mascota.component';
 import { AnunciosComponent } from './components/anuncios/anuncios.component';
+import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { ChatsComponent } from './components/chats/chats.component';
 import { DescMascotaComponent } from './components/desc-mascota/desc-mascota.component';
 import { FirstComponent } from './components/first/first.component';
@@ -13,6 +14,7 @@ import { MisMascotasComponent } from './components/mis-mascotas/mis-mascotas.com
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
 import { TiendasComponent } from './components/tiendas/tiendas.component';
+import { VetInfoComponent } from './components/vet-info/vet-info.component';
 import { VeterinariosComponent } from './components/veterinarios/veterinarios.component';
 
 const routes: Routes = [{path: "first", component: FirstComponent},
@@ -28,7 +30,9 @@ const routes: Routes = [{path: "first", component: FirstComponent},
                         {path: "mis_mascotas", component: MisMascotasComponent},
                         {path: "profile", component: ProfileComponent},
                         {path: "historial", component: HistorialComponent},
-                        {path: "agregar_mascota", component: AgregarMascotaComponent}
+                        {path: "agregar_mascota", component: AgregarMascotaComponent},
+                        {path: "catalogo", component: CatalogoComponent},
+                        {path: "vet_info", component: VetInfoComponent}
                        ];
 
 @NgModule({

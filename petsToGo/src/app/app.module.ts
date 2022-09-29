@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './components/first/first.component';
 import { AlertModule } from '@coreui/angular';
-import { HeaderModule, GridModule, NavModule, DropdownModule, CardModule, ButtonModule, ImgModule, FooterModule, FormModule, SidebarModule, PaginationModule, PopoverModule} from '@coreui/angular';
+import { HeaderModule, GridModule, NavModule, DropdownModule, CardModule, ButtonModule, ImgModule, FooterModule, FormModule, SidebarModule, PaginationModule, PopoverModule, CarouselModule} from '@coreui/angular';
 import { RegisterComponent } from './components/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/login/login.component';
@@ -21,6 +21,8 @@ import { MisMascotasComponent } from './components/mis-mascotas/mis-mascotas.com
 import { ProfileComponent } from './components/profile/profile.component';
 import { HistorialComponent } from './components/historial/historial.component';
 import { AgregarMascotaComponent } from './components/agregar-mascota/agregar-mascota.component';
+import { CatalogoComponent } from './components/catalogo/catalogo.component';
+import { VetInfoComponent } from './components/vet-info/vet-info.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { AgregarMascotaComponent } from './components/agregar-mascota/agregar-ma
     MisMascotasComponent,
     ProfileComponent,
     HistorialComponent,
-    AgregarMascotaComponent
+    AgregarMascotaComponent,
+    CatalogoComponent,
+    VetInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +63,8 @@ import { AgregarMascotaComponent } from './components/agregar-mascota/agregar-ma
     SidebarModule,
     BrowserAnimationsModule,
     PaginationModule,
-    PopoverModule
+    PopoverModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
