@@ -1,7 +1,74 @@
-
+<c-header class="header_color">
+    <c-container fluid>
+        <div class="side-menu" [@openCloseSideMenu]="sideMenuOpen ? 'open' : 'closed'" (mouseleave)="closeSideMenu()"> <!--Esto es para el menu-->>
+            <h1 class=".tittle_white" style="color: #FEFCFD;">Menú</h1>
+            <hr/>
+            <ul class="side-menu-nav">
+              <li class="nav-item">
+                <a cNavLink routerLink="/adoptar" class="side-menu-link">
+                    <button cButton color="light" variant="outline">Adoptar <img src="assets/images/icons/btnAdoptar.svg" width="50px" height="50px"></button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a cNavLink routerLink="/veterinarios" class="side-menu-link">
+                    <button cButton color="light" variant="outline">Veterinarias <img src="assets/images/icons/btnVeterinaria.svg" width="50px" height="50px"></button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a cNavLink routerLink="/tiendas" class="side-menu-link">
+                    <button cButton color="light" variant="outline">Tiendas <img src="assets/images/icons/btnTienda.svg" width="50px" height="50px"></button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a cNavLink routerLink="/anuncios" class="side-menu-link">
+                    <button cButton color="light" variant="outline">Anunciar <img src="assets/images/icons/btnAnunciar.svg" width="50px" height="50px"></button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a cNavLink routerLink="/mis_mascotas" class="side-menu-link">
+                    <button cButton color="light" variant="outline">Mis mascotas <img src="assets/images/icons/btnMisMascotas.svg" width="50px" height="50px"></button>
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a cNavLink routerLink="/chats" class="side-menu-link">
+                    <button cButton color="light" variant="outline">Grupos <img src="assets/images/icons/btnGrupos.svg" width="50px" height="50px"></button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a cNavLink routerLink="/first" class="side-menu-link">
+                    <button cButton color="light" variant="outline">Salir <img src="assets/images/icons/btnSalir.svg" width="50px" height="50px"></button>
+                </a>
+              </li>        
+            </ul>
+          </div>
+          
+          
+          <div class="toolbar" role="banner">
+            <a (click)="openSideMenu()">
+              <svg class="btn-sandwitch" width="30" height="23" viewBox="0 0 59 45" xmlns="http://www.w3.org/2000/svg">
+                <rect width="59" height="11" />
+                <rect y="34" width="59" height="11" />
+                <rect y="16" width="59" height="13" />
+              </svg>
+            </a>
+            <div></div>
+          </div>
+          <a cNavLink routerLink="/home">
+            <c-header-brand [routerLink]>
+              <img src="assets/images/logo/PetsToGoOscuro.png" width="80px" height="80px">
+          </c-header-brand>
+            <c-header-brand class="tittle_white">PetsToGo</c-header-brand>
+          </a>
+      <c-header-nav class="ms-auto">
+        <c-nav-item class="button_attributs" cNavLink routerLink="/profile">
+            <button cButton color="light" variant="outline" >Mi perfil <img src="assets/images/icons/Usuario.svg" width="50px" height="50px"></button>
+        </c-nav-item>
+      </c-header-nav>
+    </c-container>
+</c-header>
 
 <div>
-    <c-row class="empty_space">
+    <c-row class="empty_space center_attributs">
         <c-col [sm]="5">
             <h1 class="tittle_white" style="color: #5D5D81;">Conozca nuestras mascotas en adopción</h1>
         </c-col>
@@ -85,19 +152,19 @@
         <c-col>
             <c-row class="empty_space">
                 <c-col sm="4">
-                    <a cNavLink routerLink="/animal">
+                    <a cNavLink routerLink="/desc_mascota">
                         <button cButton color="link" variant="outline"><img src="assets/images/mascotas/Merlin.svg" width="150px" height="150px"></button>
                         <p>Merlín</p>
                     </a>
                 </c-col>
                 <c-col sx>
-                    <a cNavLink routerLink="/animal">
+                    <a cNavLink routerLink="/desc_mascota">
                         <button cButton color="link" variant="outline"><img src="assets/images/mascotas/Bruno.svg" width="150px" height="150px"></button>
                         <p>Bruno</p>
                     </a>
                 </c-col>
                 <c-col sx>
-                    <a cNavLink routerLink="/animal">
+                    <a cNavLink routerLink="/desc_mascota">
                         <button cButton color="link" variant="outline"><img src="assets/images/mascotas/Coco.svg" width="150px" height="150px"></button>
                         <p>Coco</p>
                     </a>
@@ -105,19 +172,19 @@
             </c-row>
             <c-row class="empty_space">
                 <c-col sx>
-                    <a cNavLink routerLink="/animal">
+                    <a cNavLink routerLink="/desc_mascota">
                         <button cButton color="link" variant="outline"><img src="assets/images/mascotas/Musi.svg" width="150px" height="150px"></button>
                         <p>Musi</p>
                     </a>
                 </c-col>
                 <c-col sx>
-                    <a cNavLink routerLink="/animal">
+                    <a cNavLink routerLink="/desc_mascota">
                         <button cButton color="link" variant="outline"><img src="assets/images/mascotas/Inge.svg" width="150px" height="150px"></button>
                         <p>Inge</p>
                     </a>
                 </c-col>
                 <c-col sx>
-                    <a cNavLink routerLink="/animal">
+                    <a cNavLink routerLink="/desc_mascota">
                         <button cButton color="link" variant="outline"><img src="assets/images/mascotas/Osito.svg" width="150px" height="150px"></button>
                         <p>Osito</p>
                     </a>

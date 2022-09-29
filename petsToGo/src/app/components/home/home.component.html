@@ -10,7 +10,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a cNavLink routerLink="/veterinarias" class="side-menu-link">
+                <a cNavLink routerLink="/veterinarios" class="side-menu-link">
                     <button cButton color="light" variant="outline">Veterinarias <img src="assets/images/icons/btnVeterinaria.svg" width="50px" height="50px"></button>
                 </a>
               </li>
@@ -25,12 +25,12 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a cNavLink routerLink="/historial" class="side-menu-link">
-                    <button cButton color="light" variant="outline">Historial <img src="assets/images/icons/btnHistorial.svg" width="50px" height="50px"></button>
+                <a cNavLink routerLink="/mis_mascotas" class="side-menu-link">
+                    <button cButton color="light" variant="outline">Mis mascotas <img src="assets/images/icons/btnMisMascotas.svg" width="50px" height="50px"></button>
                 </a>
               </li>  
               <li class="nav-item">
-                <a cNavLink routerLink="/grupos" class="side-menu-link">
+                <a cNavLink routerLink="/chats" class="side-menu-link">
                     <button cButton color="light" variant="outline">Grupos <img src="assets/images/icons/btnGrupos.svg" width="50px" height="50px"></button>
                 </a>
               </li>
@@ -53,13 +53,15 @@
             </a>
             <div></div>
           </div>
-        <c-header-brand [routerLink]>
-            <img src="assets/images/logo/PetsToGoOscuro.png" width="80px" height="80px">
-        </c-header-brand>
-      <c-header-brand class="tittle_white">PetsToGo</c-header-brand>
+          <a cNavLink routerLink="/home">
+            <c-header-brand [routerLink]>
+              <img src="assets/images/logo/PetsToGoOscuro.png" width="80px" height="80px">
+          </c-header-brand>
+            <c-header-brand class="tittle_white">PetsToGo</c-header-brand>
+          </a>
       <c-header-nav class="ms-auto">
-        <c-nav-item class="button_attributs">
-            <button cButton color="light" variant="outline">Mi perfil <img src="assets/images/icons/Usuario.svg" width="50px" height="50px"></button>
+        <c-nav-item class="button_attributs" cNavLink routerLink="/profile">
+            <button cButton color="light" variant="outline" >Mi perfil <img src="assets/images/icons/Usuario.svg" width="50px" height="50px"></button>
         </c-nav-item>
       </c-header-nav>
     </c-container>
